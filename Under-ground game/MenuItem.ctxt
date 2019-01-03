@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=MenuItem
+comment0.text=\n\ Write\ a\ description\ of\ class\ MenuItem\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=title\ message
+comment1.target=void\ MsgBox(java.lang.String,\ java.lang.String)
+comment2.params=normal\ over
+comment2.target=MenuItem(java.lang.String,\ java.lang.String)
+comment2.text=\n\ Constructor.\n\ Initialises\ the\ normal\ and\ over\ images.\n
+comment3.params=
+comment3.target=boolean\ isMouseOver()
+comment3.text=\n\ Returns\ true\ if\ the\ mouse\ is\ over\ this\ object.\n\ \n\ @return\ boolean.\n
+comment4.params=
+comment4.target=boolean\ isMouseClicked()
+comment4.text=\n\ Return\ true\ if\ the\ mouse\ has\ been\ clicked\ over\ this\ object.\n\ \n\ @return\ boolean.\n
+comment5.params=
+comment5.target=void\ act()
+comment5.text=\n\ Act\ -\ do\ whatever\ the\ MenuItem\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
+numComments=6

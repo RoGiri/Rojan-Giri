@@ -1,0 +1,37 @@
+#BlueJ class context
+comment0.target=Board
+comment0.text=\n\ This\ is\ a\ part\ of\ the\ Gamemain.\ It\ creates\ the\ board\ from\ the\ array\n\ It\ creates\ arraylist\ of\ monsters\n\ This\ is\ the\ layout\ for\ which\ the\ game\ will\ be\ played,\ the\ \n\ equals\ sign\ are\ the\ hedges\ and\ the\ stars\ are\ the\ possible\ \n\ positions\ where\ the\ monsters\ will\ appear.\n\ \n\n\ @author\ (Rojan\ Giri)\n\ @version\ (V1)\n
+comment1.params=
+comment1.target=Board()
+comment1.text=\n\ Constructor\ fills\ the\ board\ initially\ with\ *\n\ and\ sets\ up\ the\ surrounding\ edges\ /\ hedge\ "\="\n\ @param\n
+comment10.params=rw\ cl
+comment10.target=void\ removeBoardMonster(int,\ int)
+comment10.text=\n\ It\ replaces\ the\ a\ particular\ postion\ of\ the\ board\ with\ *\ \n\ @param\ assigns\ '*'\ \n
+comment11.params=
+comment11.target=void\ getScore()
+comment11.text=\n\ Loopes\ though\ the\ arraylist\ and\ print\ out\ the\ stored\ name\ and\ score\ of\ the\ monsters.\ \n\ @param\ prints\ the\ score\ and\ name\ of\ the\ monster\ \n
+comment2.params=
+comment2.target=void\ viewBoard()
+comment2.text=\n\ set\ ups\ the\ board\n\ @param\n
+comment3.params=
+comment3.target=void\ inputMonsters()
+comment3.text=\n\ ask\ for\ the\ input\ for\ the\ monster\ name\ \n\ adds\ the\ monsters\ as\ a\ new\ monster\n\ adds\ the\ monster\ in\ the\ arraylist\n\ assigns\ the\ monster\ \n\ @param\ input\ the\ monstername\ and\ added\ to\ the\ board.\n
+comment4.params=monster
+comment4.target=void\ findPlaceMonster(Monster)
+comment4.text=\n\ find\ the\ random\ place\ within\ the\ board\ and\ checkes\ weather\ or\ not\ the\ array\ is\ occupied\ \n\ gets\ the\ first\ letter\ of\ the\ monster\ name\ and\ the\ postion\ \n\ \n\ @param\ randomly\ assign\ monster\ with\ its\ first\ charecter\n
+comment5.params=
+comment5.target=void\ getList()
+comment5.text=\n\ gets\ the\ list\ of\ all\ the\ monster\ in\ the\ board\ by\ looping\ though\ the\ arraylist\ of\ monsters\n\ @param\ get\ name\ stored\ in\ the\ arraylist\ \n
+comment6.params=name
+comment6.target=Monster\ returnName(java.lang.String)
+comment6.text=\n\ looped\ though\ the\ arraylist\ of\ monsters\ ,\ if\ it\ contains\ the\ input\ return\ m\n\ @return\ null\ if\ the\ imput\ name\ does\ conatin\ with\ in\ the\ arryalist\n
+comment7.params=
+comment7.target=void\ attackMonster()
+comment7.text=\n\ ASk\ for\ the\ name\ of\ the\ monster\ to\ launch\ the\ attack\ \n\ look\ is\ the\ input\ contains\ with\ in\ the\ arraylist\ and\ if\ not\ null\ it\ launched\ the\ attack\ monster\ method\n\ @param\ get\ the\ input\ and\ search\ for\ the\ input\ within\ the\ array\ and\ if\ found\ attacks\ the\ other\ monsters\ \n
+comment8.params=monster
+comment8.target=void\ launchAttack(Monster)
+comment8.text=\n\ \n\ gets\ the\ postion\ of\ the\ monster\ and\ checks\ around\ for\ another\ monster\ ,\ \n\ and\ if\ its\ there\ ,it\ removes\ the\ monster\ from\ the\ board\ and\ arraylist,\n\ and\ give\ the\ attacking\ monster\ a\ 10\ point\ score.\n\ \n
+comment9.params=removeM
+comment9.target=void\ remove(char)
+comment9.text=\n\ remove\ the\ charrecter\ from\ the\ board\ and\ arraylist\ by\ looping\ though\ the\ arraylist\ of\ monstername\ \n\ @param\ remove\ the\ initial\ character\ of\ teh\ monster\ name\n
+numComments=12

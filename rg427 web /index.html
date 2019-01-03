@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>rg427 Ajax Assignment</title>
+		<style>
+
+		ul {
+		  list-style-type: none;
+		  margin: 0;
+		  padding: 0;
+		  overflow: hidden;
+		  background-color: #333;
+
+
+		}
+
+		li {
+		  float: left;
+		  border-right:1px solid #bbb;
+		}
+
+		li:last-child {
+		  border-right: none;
+		}
+
+		li a {
+		  display: block;
+		  color: white;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+
+		}
+
+		li a:hover:not(.active) {
+		  background-color: #111;
+		}
+
+		.active {
+		  background-color: #4CAF50;
+		}
+
+
+		.heading{
+
+		  font-weight: bold;
+		  font-size: 60;
+		  left:50%;
+		  position:relative;
+		}
+
+
+		table {
+		  font-family: arial, sans-serif;
+		  border-collapse: collapse;
+		  width: 100%;
+		}
+
+		td, th {
+		  border: 1px solid #dddddd;
+		  text-align: left;
+		  padding: 8px;
+		}
+
+		tr:nth-child(even) {
+		  background-color: #dddddd;
+		}
+		h1{
+			position: relative;
+			left:30%;
+
+		}
+		.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+		</style>
+
+		</head>
+
+
+
+
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
+	<script>
+					$(document).ready(function(){
+						retrievePage=1;
+						searchpage(retrievePage);
+						Pages();
+					});
+					var totalNumberOfPages;
+					var retrievePage;
+         // searching for all the available page
+						function searchpage(retrievePage){
+							$("tbody tr").remove()// remove existing table
+							$.get('https://www.cs.kent.ac.uk/people/staff/sm951/co539/assessment2/hygiene.php?operation=get&page='+ retrievePage, function(data){
+							for (var i = 0; i < data.length; i++) {// looping to get the page
+					 			var tr = $('<tr/>')
+								var element = data[i];
+								$('#rating_table').append(tr);// appending data in the table
+								$(tr).append("<td>"+element.name+"</td>");
+					      $(tr).append("<td>"+element.addressLine+"</td>");
+					      $(tr).append("<td>"+element.hygieneRating+"</td>");
+					      $(tr).append("<td>"+element.ratingDate+"</td>");
+					   		$(tr).append('<td><button onClick="getRating(\''+element.name+'\',\''+ element.addressLine+'\')">Get Rating</button></td>')// creating a button which on click take the name and addressLine
+
+						   		}
+						   		},"json");}
+
+              //Creatng a paginator
+					   function Pages(){
+							$.get('https://www.cs.kent.ac.uk/people/staff/sm951/co539/assessment2/hygiene.php?operation=pages', function(data){
+								totalNumberOfPages = data.pages;
+								count = 1;
+								var pageSections ='';
+								for(var i = 0; i < totalNumberOfPages; i++)
+							{
+								pageSections += '<button onClick="searchpage('+count+')">' + count +'</button> ';// when the button is clicked it will generate the page
+								count++// increments the count to get the correct page
+							}
+								$('#Pagination').append(pageSections);
+
+					   		}, "json");}
+
+
+
+								// Searches for the input name in the database/ table
+					   function Search(name){
+
+					   		$.get('https://www.cs.kent.ac.uk/people/staff/sm951/co539/assessment2/hygiene.php?operation=search&name='+ name, function(data){
+									$('tbody tr').remove()// removes the existing data from the table is the name was found
+						   			for (var i = 0; i < data.length; i++) {
+						   				var tr = $('<tr/>');
+											var element = data[i];
+											$('#rating_table').append(tr);// appends the data of the input name in the table
+											$(tr).append("<td>"+element.name+"</td>");
+								      $(tr).append("<td>"+element.addressLine+"</td>");
+								      $(tr).append("<td>"+element.hygieneRating+"</td>");
+								      $(tr).append("<td>"+element.ratingDate+"</td>");
+								   		$(tr).append('<td><button onClick="getRating(\''+element.name+'\',\''+ element.addressLine+'\')">Get Rating</button></td>')
+
+									   		}
+											},"json");}// Has a onClick function so when the button is clicked, it will get name and addressLine from the parameter
+
+											// get the rating of the restaurant stored in rating.php and when the button is clicked it get the name and addressLine as a parameter then look for those parameter
+									function getRating(name, addressLine) {
+									$.get("https://www.cs.kent.ac.uk/people/staff/sm951/co539/assessment2/rating.php?name=" + name, function(data) {
+									    var found = false;// initial boolean
+									                  for (var i = 0; i < data.length; i++) {
+																			var element = data[i];
+									                    var array_vicinity = element.vicinity.split(" ");
+									                    if(addressLine.search(array_vicinity[i]) != -1){// searches the addressLine
+									                      if(element.rating == null){
+									                        alert("Customer Rating unfortunately cant be found");// Gives a alert if the rating isnt found
+									                        found = true;
+
+									                      } else {
+
+									                        alert('Customer rating: ' + element.rating); // Show the rating of the restaurant to the customer
+
+									                        found = true;
+									                      }
+									                    }
+									                  }
+									                  if(found == false) {
+									                    alert("Customer Rating could not be found for this restaurant unfortuantely");// Gives a alert if the rating isnt found
+
+
+									                  }
+									              } ,"json");
+									            }
+
+									function autofill(inp, arr) {
+										$.get('https://www.cs.kent.ac.uk/people/staff/sm951/co539/assessment2/hygiene.php?operation=search&name='+ name, function(data){
+
+
+													},"json");}
+
+													function URL() {
+     location.href = 'https://www.cs.kent.ac.uk/people/staff/sm951/co539/assessment2/hygiene.php?operation=get&page=1';
+      }
+
+
+  </script>
+
+
+
+
+
+</head>
+
+<body>
+	<!--Heading of the page.--->
+
+	<h1>Food Hygiene Rating</h1>
+
+<br/>
+<br/>
+<button class="btn" a href="index.html">Home</a></button>
+
+<!--Creatng a searchbox to search for the name of the Bussines--->
+	<div class="ui-widget">
+		<label for="name_search">Bussines Name</label>
+		<input type="text" width="50px" id="name_search" placeholder="search">
+		<button onClick="Search(document.getElementById('name_search').value)">Search</button>
+</div>
+<br/>
+
+
+<!--creating a table to import data from hygiene.php--->
+	<table id = "rating_table" class="ratingtable">
+	<thead>
+	<tr>
+
+		<th >Name</th>
+		<th >Address</th>
+		<th >Hygiene Rating</th>
+		<th >Rating Date</th>
+		<th>Rating</th>
+	</tr>
+	</thead>
+	<table>
+
+<!--Creatng a paginator--->
+
+	<div id="Pagination"></div>
+</body>
+</html>

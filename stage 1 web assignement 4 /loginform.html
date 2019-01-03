@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="Main.css">
+<title>Login </title>
+</head>
+
+<body>
+<h1> User Login </h1>
+    
+    <h4> Please enter your details to login to the database</h4>
+    
+ <form id="login" action="login.php"  method="post">
+ 
+ <div class="container">
+    <label for="username"><b>Username</b></label>
+    <input type="text" id="username" placeholder="Enter Username" name="username" id="username" required>
+     
+     <br>
+     <br>
+
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" id="password" required>
+     <br>
+     <br>
+      <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+     <br>
+     <br>
+     
+
+    <button type="submit" value="Login" id="loginbutton">Login</button>
+   
+   
+  </div>
+
+</form>       
+</body>
+
+</html>
+

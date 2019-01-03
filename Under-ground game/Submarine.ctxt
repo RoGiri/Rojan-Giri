@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=Submarine
+comment0.text=\n\ Submarine,\ the\ main\ protagoist\ of\ the\ game\n\ \n\ @author\ Rojan\ Giri\n\ @version\ 1\n
+comment1.params=
+comment1.target=Submarine()
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\n\ Act\ -\ do\ whatever\ the\ Submarine\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
+comment3.params=
+comment3.target=void\ applyGravity()
+comment3.text=\n\ Contantly\ apply\ gravity\ to\ Submarine\n\ \n
+comment4.params=
+comment4.target=void\ checkKeys()
+comment4.text=\n\ check\ if\ a\ specific\ leyboard\ key\ has\ been\ pressed.\ If\ it\ has\ ,\ react\ accordingly.\n\ Do\ the\ same\ if\ a\ mouse\ button\ has\ been\ clicked.\n
+comment5.params=
+comment5.target=void\ animateSubmarine()
+comment5.text=\n\ switch\ between\ the\ diffrent\ images\n
+comment6.params=
+comment6.target=void\ rotateSubmarine()
+comment6.text=\n\ Rotate\ Submarine\ based\ on\ current\ velocity\ value\n
+comment7.params=
+comment7.target=boolean\ checkCollision()
+comment7.text=\n\ check\ for\ collision\ with\ ground\n
+comment8.params=
+comment8.target=void\ upperBoundary()
+comment8.text=\n\ Creeate\ a\ boundary\ to\ prevent\ Submarine's\ exit\ from\ the\ game\ screen\n
+numComments=9

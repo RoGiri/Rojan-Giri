@@ -1,0 +1,154 @@
+body {
+background: #ffd89b;
+background: -webkit-linear-gradient(to right, #19547b, #ffd89b);
+background: linear-gradient(to right, #19547b, #ffd89b);
+text-align: center;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#loginbutton[type=submit] {
+    width: 20%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#loginbutton[type=submit]:hover {
+    background-color: #45a049;
+       
+}
+
+button {
+  padding: 15px 35px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px white;
+}
+
+button:hover {background-color: #3e8e41}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+h1 {
+	font-family: "Courier New";
+    font-size: 90px;
+	width: 100%;
+    color: black;
+    text-align: center;
+}
+
+h4 {
+	font-family: "Courier New";
+    font-size: 20px;
+	width: 100%;
+    color: black;
+    text-align: center;
+}
+
+
+
+div.container {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 50px 20px 50px 20px;
+}
+
+table{
+	font-family: "Arial";
+    font-size: 25px;
+    border: 1px solid black;
+	background-color: white;
+	padding: 5px;	
+	text-align: center;
+	width: 95%;
+	margin-left:auto; 
+    margin-right:auto;
+	border-radius: 15px
+            }
+
+            table th{
+              text-align: left;
+              background-color:#6e916d;
+
+            }
+            table th,td{
+              text-align: left;
+              padding: 15px;
+              border-bottom: 1px solid black;
+            }
+            table tr:hover {background-color: #f5f5f5;}
+            table tr:nth-child(even) {background-color: #f2f2f2;}
+
+#loginbutton{
+  padding: 10px 35px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+ text-decoration: none;   
+   
+}
+#loginbutton:hover {background-color: red}
+
+
+#logout {
+	font-size: 20px;
+    color: black;	
+	text-align: right;
+}
+
+#home {
+	font-size: 20px;
+    color: black;	
+	text-align: center;
+}
+
+#username, #password {
+	font-family: "Courier New";
+    font-size: 25px;
+    color: black;
+	width: 40%;
+	text-align: center;
+}
+
+
+
+
+
+
+

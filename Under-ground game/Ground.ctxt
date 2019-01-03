@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Ground
+comment0.text=\n\ Ground,\ moves\ left\ of\ the\ screen,\ alos\ acts\ as\ an\ obstracle\ for\ Submarine.\n\ \n\ @author\ Rojan\ Giri\ \n\ @version\ 1\n
+comment1.params=
+comment1.target=Ground()
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\n\ Act\ -\ do\ whatever\ the\ Ground\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
+comment3.params=
+comment3.target=void\ removeGround()
+comment3.text=\n\ When\ the\ ground\ reaches\ half\ it\ width\ past\ the\ screen\ it\ is\ removed\ from\ the\ game\n
+numComments=4

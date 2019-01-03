@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Hill
+comment0.text=\n\ Hill,\ this\ will\ act\ as\ an\ obstracle\ for\ Submarine\ to\ aviod\n\ \n\ Rojan\ Giri\n\ @version\ 0.1\n
+comment1.params=selection
+comment1.target=Hill(java.lang.String)
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\n\ Act\ -\ do\ whatever\ the\ Hill\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
+comment3.params=
+comment3.target=void\ removeHill()
+comment3.text=\n\ When\ Hill\ reached\ its\ object\ width\ past\ the\ screen,\ it\ is\ removed\ from\ the\ game\n
+numComments=4

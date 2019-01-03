@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=GameMain
+comment0.text=\n\ This\ class\ is\ the\ main\ class\ of\ the\ this\ game.\n\ The\ player\ has\ to\ choose\ 5\ option\ that\ are\ given\ on\ th\ game.\ \n\ To\ play\ this\ game\ create\ an\ instance\ of\ main(String[]\ args)\n\ \ This\ main\ class\ creates\ and\ initialises\ all\ the\ others\:\ \n\ \ It\ creates\ board\ and\ display\ the\ menu\ \n\ \ \n\ @author\ (Rojan\ Giri\ )\n\ @version\ (v1)\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\n\ Need\ to\ initialise\ to\ play\ the\ game\ \n\ it\ create\ the\ board\ and\ manu\ after\ the\ game\ is\ launched\ \n\ \n\ @param\ game\ display\ the\ board\ and\ menu\n
+comment2.params=
+comment2.target=void\ display_menu()
+comment2.text=\n\ \n\ ask\ the\ player\ for\ the\ input\ \n\ the\ player\ has\ to\ choose\ one\ of\ the\ option\ given\ to\ play\ the\ game\ \n\ it\ also\ catches\ if\ the\ input\ is\ not\ from\ the\ option\ and\ any\ string\ instead\ of\ any\ integers\ input\n\ @param\ choose\ between\ the\ options\n
+numComments=3

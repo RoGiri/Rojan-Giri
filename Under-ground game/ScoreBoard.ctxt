@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=ScoreBoard
+comment0.text=\n\ The\ score\ board.\n\ \n\ @author\ imacat\ <imacat@mail.imacat.idv.tw>\n\ @version\ 2014/2/10\n
+comment1.params=
+comment1.target=ScoreBoard()
+comment1.text=\n\ Creates\ a\ new\ score\ board.\n\ \n
+comment2.params=score
+comment2.target=void\ setScore(int)
+comment2.text=\n\ Sets\ the\ score.\n\ \n\ @param\ score\ the\ score\n
+comment3.params=score
+comment3.target=void\ drawScore(int)
+comment3.text=\n\ Draws\ the\ score.\n\ \n\ @param\ score\ the\ score\n
+numComments=4

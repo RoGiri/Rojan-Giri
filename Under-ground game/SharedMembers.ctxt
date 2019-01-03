@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=SharedMembers
+comment0.text=\n\ This\ is\ the\ SharedMembers\ class.\n\ Any\ Varibales\ or\ methods\ that\ are\ be\ shared\ across\ diffrent\ classes\ are\ places\ in\ here\n\ \n\ @author\ Rojan\ Giri\n\ @version\ 1\n
+comment1.params=
+comment1.target=void\ moveleft()
+comment1.text=\n\ Move\ object\ on\ the\ X-axis\ to\ the\ left,\ Y\ axis\ to\ remain\ stationary\n
+numComments=2

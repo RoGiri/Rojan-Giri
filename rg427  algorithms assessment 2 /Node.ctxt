@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=Node
+comment1.params=h\ t
+comment1.target=Node(java.lang.Comparable,\ Node)
+comment10.params=n
+comment10.target=void\ test(int)
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment3.params=
+comment3.target=java.lang.String\ tailString()
+comment4.params=
+comment4.target=int\ length()
+comment5.params=
+comment5.target=java.util.Queue\ queueSortedSegments()
+comment6.params=
+comment6.target=boolean\ isSorted()
+comment7.params=another
+comment7.target=Node\ merge(Node)
+comment8.params=
+comment8.target=Node\ mergeSort()
+comment9.params=n
+comment9.target=Node\ randomList(int)
+numComments=11
